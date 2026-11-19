@@ -121,5 +121,35 @@ print(can_include)
 ```
 ## Zadanie 13
 ```python
+stock = 12
+sold_quantity = 3
+returned_quantity = 1
+
+stock_after_sale = stock - sold_quantity
+print(stock_after_sale)
+
+stock_after_refund = stock_after_sale + returned_quantity
+print(stock_after_refund)
+
+needs_restock =  stock_after_refund < 10
+print(needs_restock)
+
+```
+## Zadanie 14
+```python
+segment_value = [
+    {'amount' : 299, 'is_high': 299 >= 300},
+    {'amount' : 300, 'is_high': 300 >= 300},
+    {'amount' : 301, 'is_high': 301 >= 300}
+]
+print(segment_value)
+amount = 300
+if amount >= 300:
+    print('high')
+else:
+    print('standard')
+```
+## Zadanie 15
+```python
 
 ```
