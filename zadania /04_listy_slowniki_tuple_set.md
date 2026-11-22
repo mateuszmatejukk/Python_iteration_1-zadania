@@ -109,5 +109,11 @@ print(order.items())
 ```
 ## Zadanie 12
 ```python
-
+orders = [
+    {"order_id": 1, "total": 100, "status": "paid"},
+    {"order_id": 2, "total": 200, "status": "cancelled"},
+]
+first_order = (orders[0])
+print(first_order['status'])
+print(orders[0]["status"])
 ```
