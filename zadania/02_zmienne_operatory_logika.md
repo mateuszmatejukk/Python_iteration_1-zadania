@@ -134,5 +134,40 @@ print(can_include)
 ```
 ## Zadanie 13
 ```python
+stock = 12
+sold_quantity = 3
+returned_quantity = 1
+stock_after_sale = stock - sold_quantity
+stock_after_refund = stock_after_sale + returned_quantity
+needs_restock = stock_after_refund < 10
+print(stock_after_sale)
+print(stock_after_refund)
+print(needs_restock)
+```
+## Zadanie 14
+```python
+amount_1 = 299
+amount_2 = 300
+amount_3 = 301
+is_high_1 = amount_1 >= 300
+print(is_high_1)
+is_high_2 = amount_2 >= 300
+print(is_high_2)
+is_high_3 = amount_3 >= 300
+print(is_high_3)
+dictionaries  = [
+    {'amount' : amount_1, 'is_high' : is_high_1},
+    {'amount' : amount_2,'is_high' : is_high_2},
+    {'amount' : amount_3,'is_high' : is_high_3}
+]
+print(dictionaries)
+amount = 300
+if amount >= 300:
+    label = 'high'
+else:
+    label = 'standard'
+```
+## Zadanie 15
+```python
 
 ```
