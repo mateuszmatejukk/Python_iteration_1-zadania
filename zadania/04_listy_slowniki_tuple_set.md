@@ -137,3 +137,43 @@ print(orders[-1])
 ```
 ## Zadanie 14
 ```python
+queue = [1001, 1002, 1003, 1002]
+current_id = queue.pop(0)
+queue.remove(1002)
+del queue[-1]
+print(current_id)
+print(queue)
+queue.clear()
+print(queue)
+```
+## Zadanie 15
+```python
+order_ids = [10, 20, 30, 40, 50, 60]
+first_ids = order_ids[:3]
+second_ids = order_ids[-2::]
+third_ids = order_ids[::2]
+fourth_ids = order_ids[::-1]
+print(order_ids)
+print(first_ids)
+print(second_ids)
+print(third_ids)
+print(fourth_ids)
+```
+## Zadanie 16
+```python
+amounts = [200, 50, 100, 50]
+amounts_sorted = (sorted(amounts, reverse=True))
+print(amounts_sorted)
+sort_result = amounts.sort()
+print(amounts)
+print(sort_result, type(sort_result))
+```
+## Zadanie 17
+```python
+order = {"id": 1, "status": "new", "debug": True}
+changes = {"status": "paid", "country": "PL"}
+was_debug = order.pop('debug')
+order.update(changes)
+order.pop('temporary_note', None)
+print(was_debug, order)
+```
